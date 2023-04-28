@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="Index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <!-- --------------Navbar Center--------------- -->
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Job</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notification</span></a></li>
+            </ul>
+        </div>
+        <!-- --------------navbar right----------------- -->
+        <div class="navbar-right">
+            <div class="online">
+                <img src="img/Profile image - Copy.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+
+        </div>
+
+        <!-- -----------------------Profile Dropdown Menu-------------------- -->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="img/Profile image - Copy.png">
+                    <div>
+                        <h3>Shantanu Paul</h3>
+                        <a href="Profile.html">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privecy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </nav>
+
+    <!-- -----------------------------Navbar close------------------------- -->
+
+
+    <div class="container">
+
+        <!-- ---------------------left-sidebar--------------------- -->
+        <div class=" left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="img/background.jpg" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="img/Profile image - Copy.png">
+                    <h1>Shantanu Paul</h1>
+                    <h3>Web Developer at Google</h3>
+                    <ul>
+                        <li>Your Profile Views <span>52</span></li>
+                        <li>Your Post Views <span>810</span></li>
+                        <li>Your connection <span>300</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/items.png">My Items</a>
+                    <a href="#"><img src="images/premium.png">Try Premium</a>
+                </div>
+            </div>
+
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png">Web Development</a>
+                <a href="#"><img src="images/recent.png">User Interface</a>
+                <a href="#"><img src="images/recent.png">Online Learning</a>
+                <a href="#"><img src="images/recent.png">Learn Online</a>
+                <a href="#"><img src="images/recent.png">Code Better</a>
+                <a href="#"><img src="images/recent.png">Group Learning</a>
+
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png">Web Design Group</a>
+                <a href="#"><img src="images/group.png">HTML & CSS</a>
+                <a href="#"><img src="images/group.png">JavaScript Group</a>
+                <a href="#"><img src="images/group.png">Learn Coding Online</a>
+
+                <h3>HASTAGS</h3>
+                <a href="#"><img src="images/hashtag.png">Webdevelopment</a>
+                <a href="#"><img src="images/hashtag.png">userinternface</a>
+                <a href="#"><img src="images/hashtag.png">onlinelearning</a>
+
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
+        </div>
+        <!-- ---------------------Main content--------------------- -->
+        <div class="main-content">
+
+            <div class="create-post">
+
+                <div class="create-post-input">
+                    <img src="img/Profile image - Copy.png">
+                    <textarea rows="2" placeholder="Write A Post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png">Photo</li>
+                    <li><img src="images/video.png">Video</li>
+                    <li><img src="images/event.png">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort by : <span>top <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+
+
+            <div class="post">
+                <div class="post-auther">
+                    <img src="img/myntra logo.jpg">
+                    <div>
+                        <h1>Myntra</h1>
+                        <small>78,54,588 Follower</small>
+                        <small>2 Hour ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa laudantium ducimus explicabo quam
+                    nam! Maiores, excepturi unde fugiat nisi et exercitationem adipisci delectus, vitae, culpa eius
+                    quasi magnam quia nemo!</p>
+                <img src="img/Demo post image - Copy.jpg" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-user">Abhishak Mishra and 100 others</span>
+                    </div>
+                    <div>
+                        <span>22 Comments &middot; 40 Shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src=" images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post">
+                <div class="post-auther">
+                    <img src="img/Profile logo of yash.jpg">
+                    <div>
+                        <h1>Yash Sharma</h1>
+                        <small>10 Million - Follower </small>
+                        <small>12 Hour ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa laudantium ducimus explicabo quam
+                    nam! Maiores, excepturi unde fugiat nisi et exercitationem adipisci delectus, vitae, culpa eius
+                    quasi magnam quia nemo!</p>
+                <video src="./Demo post video.mp4" width="100%"></video>
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-user">Abhishak Mishra and 100 others</span>
+                    </div>
+                    <div>
+                        <span>22 Comments &middot; 40 Shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src=" images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <!-- ---------------------Right-sidebar--------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" class="info-icon">
+                <h3>LinkdIn News</h3>
+                <a href="#">High Demand For Skilled Manpower</a>
+                <br>
+                <span>1d Ago &middot; 10,355 Readers</span>
+
+                <a href="#">Careers growing Horizontally Too</a>
+                <br>
+                <span>1d Ago &middot; 10,589 Readers</span>
+
+                <a href="#">Less Work visa for US, More for UK</a>
+                <br>
+                <span>1d Ago &middot; 18,355 Readers</span>
+
+                <a href="#">More Hiring = Higher Confidence</a>
+                <br>
+                <span>1d Ago &middot; 78,355 Readers</span>
+
+                <a href="#"> Goutam Adani is the world's third richest</a>
+                <br>
+                <span>1d Ago &middot; 5,355 Readers</span>
+
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 Principle of web dev</p>
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand In Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+            <div class="sidebar-people">
+                <h3>Company You Might Now</h3>
+                <div class="sidebar-people-row">
+                    <img src="img/myntra logo.jpg">
+                    <div>
+                        <h2>Myntra</h2>
+                        <p>Company</p>
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="img/unilever logo.png">
+                    <div>
+                        <h2>unilever</h2>
+                        <p>Company</p>
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/logo.png">
+                    <div>
+                        <h2>LinkedIn</h2>
+                        <p>Company:- Internet</p>
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sidebar-useful-link">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get The APP</a>
+                <a href="#">More</a>
+
+
+                <div class="copyright-msg">
+                    <img src="images/logo.png">
+                    <p>LinkdIn &#169; 2023. All Right Reserved</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu() {
+        profileMenu.classList.toggle('open-menu');
+    }
+</script>
+
+
+<script>
+
+    let sidebarActivity = document.getElementById("sidebarActivity")
+    let showMoreLink = document.getElementById("showMoreLink")
+
+    function toggleActivity() {
+        sidebarActivity.classList.toggle("open-activity")
+    }
+</script>
+
+</html>
